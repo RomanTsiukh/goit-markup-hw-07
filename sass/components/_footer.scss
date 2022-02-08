@@ -1,0 +1,113 @@
+footer {
+    background-color: #2F303A;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;}
+
+.address {
+    flex-direction: column;
+    @extend %list;
+}
+
+.address__item:not(:last-child) {margin-bottom: 9px;}
+
+.address__link {
+    text-decoration: none;
+    font-style: normal;
+
+    color: $primary-white-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{color: $accent-color;}
+}
+// .address__link:hover, .address__link:focus{color: $accent-color;}
+
+.address__contacts {
+    text-decoration: none;
+    font-style: normal;
+
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {color: $accent-color;};
+}
+// .address__contacts:hover, .address__contacts:focus {color: $accent-color;}
+
+.footer__social{
+     margin-top: 12px;
+     margin-left: 70px;
+     display: inline-block;}
+
+.footer__title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    text-transform: uppercase;
+    color: $primary-white-color;
+    margin-top: 0;
+    margin-bottom: 20px;}
+    
+
+.footer__container {display: flex;}
+.footer__box {flex-direction: column;}
+
+
+/*Форма в футере*/
+
+.subscription-form {
+    display: flex;
+    margin-left: auto;
+    margin-top: 12px;
+
+    flex-direction: column;
+}
+
+.subscription-form__input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 15px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    background-color: transparent;
+    
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);  
+    outline: none;     
+}
+
+.subscription-form__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    background-color: $accent-color;
+    color: $primary-white-color;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.subscription-form__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.subscription-form__icon {margin-left: 10px;}
