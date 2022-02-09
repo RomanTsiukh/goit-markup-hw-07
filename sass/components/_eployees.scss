@@ -1,7 +1,7 @@
 .eployees {background-color: $secondery-bg-color;}
 
 
-.eployees__card {
+.eployees__list {
     @extend %list;
 }
 
@@ -33,7 +33,7 @@
     margin-top: 0;
     margin-bottom: 16px;}
 
-.eployees__list {
+.eployees__box {
     padding-top: 30px;
     padding-bottom: 30px;}
 

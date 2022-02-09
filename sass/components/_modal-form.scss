@@ -108,25 +108,19 @@ textarea{
 }
 
 .form__field-checkbox{
+    align-items: center;
+    justify-content: center;
     position: relative;
-    display: flex;
-
-    max-width: 425px; 
-    margin: 0 auto;
+    display: flex; 
 }
 
 .form__checkbox {
     display: flex;
     appearance: none;
-    padding-left: 23px;
+    position: absolute;
 }
 
 .form__checkbox-icon{
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-
     width: 16px;
     height: 15px;
 
@@ -141,13 +135,6 @@ textarea{
         background-size: contain;
     }
 }
-
-// .form__checkbox:checked ~ .form__checkbox-icon{
-//     border-color: $accent-color;
-//     background-color: $accent-color;
-//     background-origin: border-box;
-//     background-size: contain;
-// }
 
 .form__text{
     /*display: flex;*/
